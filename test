@@ -1,0 +1,4 @@
+cat /proc/1/limits | grep -E "Max open files|Max locked memory"
+
+# Check if kubelet picked up the changes
+cat /proc/$(pgrep kubelet)/limits | grep -E "Max open files|Max locked memory"
