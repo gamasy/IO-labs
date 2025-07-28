@@ -1,3 +1,5 @@
+ crio-status config | grep default_ulimits
+
 cat /proc/1/limits | grep -E "Max open files|Max locked memory"
 
 # Check if kubelet picked up the changes
