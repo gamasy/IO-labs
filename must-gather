@@ -1,0 +1,3 @@
+curl -o must-gather.sh -L https://raw.githubusercontent.com/NVIDIA/gpu-operator/master/hack/must-gather.sh
+chmod +x  must-gather.sh
+./ must-gather.sh
